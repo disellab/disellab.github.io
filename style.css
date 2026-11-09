@@ -51,7 +51,7 @@ nav a.active, nav a.join { color: var(--accent); }
 main { max-width: var(--max); margin: 0 auto; padding: 48px 24px 64px; }
 .hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
 .hero h1 { font-size: 2.1rem; }
-.lede { font-size: 1.05rem; max-width: 36em; }
+.lede { font-size: 1.05rem }
 .actions { display: flex; gap: 20px; align-items: center; margin-top: 8px; }
 .button {
   display: inline-block; background: var(--accent); color: #fff; font-weight: 500;
@@ -72,8 +72,13 @@ main { max-width: var(--max); margin: 0 auto; padding: 48px 24px 64px; }
 .pub .links a + a::before { content: " · "; color: var(--ink); }
 
 /* people */
-.person { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 28px; max-width: 46em; }
-.person img { width: 96px; height: 96px; object-fit: cover; flex: none; }
+.person { display: flex; gap: 20px; align-items: center; margin-bottom: 28px; max-width: 46em; }
+.person img {
+  width: 96px; height: 96px; object-fit: cover; flex: none;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: #fff;
+}
 .person .name { font-weight: 600; }
 .person .role { font-size: 0.9rem; }
 
